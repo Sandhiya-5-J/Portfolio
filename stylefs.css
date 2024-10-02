@@ -1,0 +1,569 @@
+/* Reset some basic styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text color */
+}
+
+.header {
+    background-color: #1f1f1f; /* Slightly lighter dark background */
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo a {
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin-left: 20px;
+}
+
+.nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    color: #f1c40f; /* Highlight color on hover */
+}
+
+.cta {
+    background-color: #f1c40f; /* Call-to-action button color */
+    color: #1f1f1f; /* Dark text on light button */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #d4ac0d; /* Darken the button on hover */
+}
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: url('your-background-image.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff; /* Light text color */
+    padding: 0 20px;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero .cta {
+    background-color: #f1c40f; /* Call-to-action button color */
+    color: #1f1f1f; /* Dark text on light button */
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.hero .cta:hover {
+    background-color: #d4ac0d; /* Darken the button on hover */
+}
+/* About Section */
+.about {
+    padding: 80px 20px;
+    background-color: #1f1f1f; /* Dark background for the about section */
+    color: #ffffff;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.skills {
+    margin-bottom: 40px;
+}
+
+.skills h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills ul li {
+    font-size: 18px;
+    background-color: #2c2c2c; /* Slightly lighter background for skill items */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    min-width: 150px;
+    margin-right: 10px;
+}
+.usp h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.usp p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+/* Portfolio Section */
+.portfolio {
+    padding: 80px 20px;
+    background-color: #121212; /* Dark background for the portfolio section */
+    color: #ffffff;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    background-color: #1f1f1f; /* Dark background for portfolio items */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.portfolio-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.portfolio-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.portfolio-info p {
+    font-size: 16px;
+    color: #bbbbbb; /* Slightly lighter color for descriptions */
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+/* Testimonials Section */
+.testimonials {
+    padding: 80px 20px;
+    background-color: #1f1f1f; /* Dark background */
+    color: #ffffff;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.testimonial-item {
+    background-color: #2c2c2c; /* Slightly lighter background for testimonial items */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.quote {
+    font-size: 18px;
+    font-style: italic;
+    color: #bbbbbb; /* Slightly lighter color for the quote text */
+    margin-bottom: 15px;
+}
+
+.author {
+    font-size: 16px;
+    color: #f1c40f; /* Highlighted author name */
+    font-weight: bold;
+}
+/* Services Section */
+.services {
+    padding: 80px 20px;
+    background-color: #121212; /* Dark background */
+    color: #ffffff;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #1f1f1f; /* Slightly lighter dark background for service items */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #f1c40f; /* Gold color for icons */
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #bbbbbb; /* Slightly lighter text color for descriptions */
+}
+
+/* Blog/Insights Section */
+.blog {
+    padding: 80px 20px;
+    background-color: #1f1f1f; /* Dark background */
+    color: #ffffff;
+    text-align: center;
+}
+
+.blog h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.blog-item {
+    background-color: #2c2c2c; /* Slightly lighter dark background for blog items */
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.blog-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.blog-image img {
+    width: 100%;
+    height: auto;
+    border-bottom: 4px solid #f1c40f; /* Gold accent under the image */
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-content h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #f1c40f; /* Highlighted heading */
+}
+
+.blog-content p {
+    font-size: 16px;
+    color: #bbbbbb; /* Slightly lighter text color for descriptions */
+    margin-bottom: 20px;
+}
+
+.read-more {
+    color: #f1c40f; /* Gold color for the Read More link */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #ffffff; /* Change to white on hover */
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 20px;
+    background-color: #121212; /* Dark background */
+    color: #ffffff;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-info {
+    margin-bottom: 40px;
+    text-align: left;
+    max-width: 500px;
+}
+
+.contact-info h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #f1c40f; /* Highlighted sub-heading */
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #bbbbbb; /* Slightly lighter text color */
+    margin-bottom: 20px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.contact-info ul li i {
+    color: #f1c40f; /* Gold color for icons */
+    margin-right: 10px;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1f1f1f; /* Dark input background */
+    color: #ffffff; /* White text color */
+    font-size: 16px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #bbbbbb; /* Lighter placeholder text color */
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+.btn {
+    background-color: #f1c40f; /* Gold button background */
+    color: #121212; /* Dark text color */
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e1b000; /* Slightly darker gold on hover */
+}
+
+@media (min-width: 768px) {
+    .contact-wrapper {
+        flex-direction: row;
+    }
+    
+    .contact-info {
+        margin-bottom: 0;
+        margin-right: 50px;
+    }
+}
+
+/* Footer Section */
+.footer {
+    padding: 40px 20px;
+    background-color: #121212; /* Dark background */
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-logo h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #f1c40f; /* Gold color for the logo */
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-nav ul li {
+    display: inline;
+}
+
+.footer-nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-nav ul li a:hover {
+    color: #f1c40f; /* Gold color on hover */
+}
+
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social ul li {
+    display: inline;
+}
+
+.footer-social ul li a {
+    color: #ffffff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.footer-social ul li a:hover {
+    color: #f1c40f; /* Gold color on hover */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #444444; /* Subtle top border */
+    padding-top: 20px;
+    font-size: 14px;
+    color: #bbbbbb; /* Slightly lighter text color */
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .footer-nav,
+    .footer-social {
+        margin-bottom: 0;
+    }
+}
+
